@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:8080/api/pacientes
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nombre": "Laura Restrepo",
+      "correo": "laura.restrepo@gmail.com"
+    }
+order: 1000

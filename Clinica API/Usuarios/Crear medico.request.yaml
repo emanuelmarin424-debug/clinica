@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:8080/api/medicos
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nombre": "Carlos Ospina",
+      "correo": "cospina@clinica.com",
+      "especialidad": "Medicina general"
+    }
+order: 4000

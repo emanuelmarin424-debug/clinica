@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8080/api/alertas/1/atender
+method: PUT
+order: 2000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:8080/api/recepcionistas
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nombre": "Diana Zapata",
+      "correo": "dzapata@clinica.com",
+      "turno": "manana"
+    }
+order: 6000

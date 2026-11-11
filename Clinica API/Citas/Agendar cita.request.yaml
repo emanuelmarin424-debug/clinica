@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:8080/api/citas
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "idPaciente": 1,
+      "idMedico": 2,
+      "fechaHora": "2027-03-10T09:00:00"
+    }
+order: 1000

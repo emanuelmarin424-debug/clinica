@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:8080/api/citas/1/cancelar
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "motivo": "El paciente no puede asistir"
+    }
+order: 5000

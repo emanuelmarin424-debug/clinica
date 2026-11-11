@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  color: #1f4e79;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 15px;
+}
+
+.tarjeta {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+}
+
+.tarjeta p {
+  margin: 6px 0;
+}
+
+/* colores segun el riesgo o el estado */
+.etiqueta {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.BAJO, .ATENDIDA {
+  background: #d4edda;
+  color: #155724;
+}
+
+.MEDIO, .PROGRAMADA {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.ALTO, .CANCELADA, .INASISTENCIA {
+  background: #f8d7da;
+  color: #721c24;
+}
